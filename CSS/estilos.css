@@ -1,0 +1,65 @@
+:root { 
+    --azul: #526f9f; 
+    --morado: #766292; 
+    --morado-claro: #d7c8ef; 
+    --fondo: #f8f9fd; 
+}
+
+html { 
+    scroll-behavior: smooth; 
+    scroll-padding-top: 5rem; 
+}
+
+body {
+     color: #34364a; 
+    }
+
+h1, h2, h3 { 
+    color: #3f4564; 
+    font-weight: 700; 
+}
+
+.site-header { 
+    background: linear-gradient(100deg, var(--azul), var(--morado)); 
+    box-shadow: 0 2px 12px #2d304c24;
+ }
+
+.logotipo {
+     width: 54px; 
+     height: 54px; 
+     object-fit: contain; 
+    }
+
+.nav-link { 
+    padding: .8rem !important; 
+    color: #ffffffe0; 
+}
+
+.nav-link:hover, .nav-link:focus { 
+    color: #fff; 
+    background: #ffffff1f; 
+}
+
+.pastel-button {
+     border: 0; 
+     border-radius: 2rem; 
+     background: var(--azul); 
+    }
+
+.pastel-button:hover, .pastel-button:focus { 
+    background: var(--morado); 
+}
+
+.form-control:focus { 
+    border-color: var(--morado-claro); 
+    box-shadow: 0 0 0 .2rem #76629229; 
+}
+
+.carousel-indicators [data-bs-target] { 
+    background-color: var(--morado);
+ }
+
+@media (max-width: 991.98px) { 
+    .nav-link { padding: .65rem .25rem !important; 
+    } 
+}

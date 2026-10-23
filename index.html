@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Fabian: desarrollo web, proyectos y contacto.">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="shortcut icon" href="iconos/favicon.ico" type="image/x-icon">
+    <title>Fabian | Portafolio personal</title>
+    <style>
+        #carrusel img { height: clamp(240px, 42vw, 440px); object-fit: contain; }
+        #mapa { height: 350px; }
+    </style>
+</head>
+<body class="bg-light">
+    <header class="navbar navbar-expand-lg navbar-dark site-header sticky-top shadow-sm">
+        <nav class="container py-2">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="imagenes/LOGO.jpg" alt="Logo personal de Fabian" class="logotipo me-2">
+                Fabian
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    <a class="nav-link" href="#quien">Quién soy</a>
+                    <a class="nav-link" href="#filosofia">Filosofía</a>
+                    <a class="nav-link" href="#video">Video</a>
+                    <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section id="quien" class="container py-5 my-5 bg-primary-subtle rounded-4 shadow-sm">
+            <div class="row align-items-center g-4 g-lg-5 p-3 p-lg-4">
+                <figure class="col-lg-6 mb-0">
+                    <img src="imagenes/YO.jpeg" alt="Retrato de Fabian" class="img-fluid w-100 object-fit-cover rounded-4 border border-4 border-white shadow">
+                </figure>
+                <article class="col-lg-6 text-center text-lg-start p-lg-3">
+                    <p class="eyebrow mb-2">Portafolio personal</p>
+                    <h1 class="display-4 fw-bold">Hola, soy Fabian</h1>
+                    <p id="parrafo" class="lead text-secondary collapse show d-lg-block">Me interesa el desarrollo web y crear páginas modernas, funcionales y adaptables a distintos dispositivos. En este portafolio comparto algunos proyectos y prácticas que he realizado.</p>
+                    <button class="btn btn-outline-primary rounded-pill px-4 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#parrafo" aria-expanded="true" aria-controls="parrafo">Mostrar información</button>
+                    <a class="btn btn-primary pastel-button shadow-sm ms-lg-2" href="#proyectos">Ver proyectos</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="proyectos" class="container py-5">
+            <div class="text-center mb-4">
+                <p class="eyebrow mb-2">Selección</p>
+                <h2 class="display-5 fw-bold">Mis proyectos</h2>
+                <p class="section-intro text-secondary">Aquí reúno algunos de mis ejercicios visuales y proyectos de desarrollo web.</p>
+            </div>
+            <div id="carrusel" class="carousel slide bg-white border rounded-4 shadow-sm overflow-hidden" aria-label="Carrusel de proyectos">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Proyecto 1"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Proyecto 2"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Proyecto 3"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Proyecto 4"></button>
+                </div>
+                <div class="carousel-inner bg-light">
+                    <article class="carousel-item active">
+                        <img src="imagenes/p01.jpg" class="d-block mx-auto img-fluid" alt="Proyecto uno del portafolio">
+                        <div class="text-center p-3 bg-white"><h3 class="h5 fw-bold text-primary-emphasis">Proyecto 1</h3><p class="text-secondary mb-0">Práctica de diseño y composición visual.</p></div>
+                    </article>
+                    <article class="carousel-item">
+                        <img src="imagenes/p02.jpg" class="d-block mx-auto img-fluid" alt="Proyecto dos del portafolio">
+                        <div class="text-center p-3 bg-white"><h3 class="h5 fw-bold text-primary-emphasis">Proyecto 2</h3><p class="text-secondary mb-0">Exploración de ideas para una interfaz digital.</p></div>
+                    </article>
+                    <article class="carousel-item">
+                        <img src="imagenes/p03.png" class="d-block mx-auto img-fluid" alt="Proyecto tres del portafolio">
+                        <div class="text-center p-3 bg-white"><h3 class="h5 fw-bold text-primary-emphasis">Proyecto 3</h3><p class="text-secondary mb-0">Práctica de color, forma y presentación.</p></div>
+                    </article>
+                    <article class="carousel-item">
+                        <img src="imagenes/p04.jpg" class="d-block mx-auto img-fluid" alt="Proyecto cuatro del portafolio">
+                        <div class="text-center p-3 bg-white"><h3 class="h5 fw-bold text-primary-emphasis">Proyecto 4</h3><p class="text-secondary mb-0">Otro de mis ejercicios de diseño y desarrollo.</p></div>
+                    </article>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev" aria-label="Proyecto anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next" aria-label="Proyecto siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="filosofia" class="bg-info-subtle py-5 border-top border-bottom">
+            <article class="container text-center p-3 p-md-5">
+                <img src="imagenes/SHIT.jpg" alt="Ilustración de usuario" class="img-fluid rounded-circle mb-4 border border-4 border-white shadow">
+                <p class="eyebrow mb-2">Cómo trabajo</p>
+                <h2 class="display-6 fw-bold">Mi filosofía</h2>
+                <p class="fs-5 text-secondary mx-auto mb-0" style="max-width: 760px;">Me gusta crear páginas claras, funcionales y adaptables. Busco que cada elemento tenga un propósito y que las personas encuentren fácilmente lo que necesitan.</p>
+            </article>
+        </section>
+
+        <section id="video" class="container py-5">
+            <div class="text-center mb-4">
+                <p class="eyebrow mb-2">Conoce el lugar</p>
+                <h2 class="display-6 fw-bold">Video de Romita</h2>
+                <p class="text-secondary">Un recorrido en video por Romita, Guanajuato.</p>
+            </div>
+            <div class="ratio ratio-16x9 rounded-4 shadow-sm overflow-hidden border">
+                    <iframe src="https://www.youtube-nocookie.com/embed/FI6Xq200kCg" title="Romita, Guanajuato: Vive Grandes Historias" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-primary-subtle py-5 border-top">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <p class="eyebrow mb-2">Hablemos</p>
+                    <h2 class="display-6 fw-bold">Contacto</h2>
+                    <p class="section-intro text-secondary">¿Tienes una idea o proyecto? Escríbeme y platicamos.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <form class="card h-100 shadow-sm rounded-4 border-0" action="#contacto" method="get">
+                            <div class="card-body p-4 p-lg-5">
+                            <div class="mb-3"><label for="nombre" class="form-label fw-semibold">Nombre</label><input type="text" class="form-control form-control-lg rounded-3" id="nombre" name="nombre" autocomplete="name" required></div>
+                            <div class="mb-3"><label for="correo" class="form-label fw-semibold">Correo electrónico</label><input type="email" class="form-control form-control-lg rounded-3" id="correo" name="correo" autocomplete="email" required></div>
+                            <div class="mb-3"><label for="mensaje" class="form-label fw-semibold">Mensaje</label><textarea class="form-control rounded-3" id="mensaje" name="mensaje" rows="5" required></textarea></div>
+                            <button type="submit" class="btn btn-primary btn-lg pastel-button shadow-sm">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6" id="ubicacion">
+                        <div class="card h-100 shadow-sm rounded-4 border-0">
+                            <div class="card-body p-4 p-lg-5">
+                            <h3 class="h5 fw-bold">Ubicación</h3>
+                            <p class="text-secondary">Mi ubicación: Romita, Guanajuato.</p>
+                            <iframe id="mapa" class="w-100 border-0 rounded-3" title="Mapa de Romita, Guanajuato" src="https://maps.google.com/maps?q=Romita%2C%20Guanajuato%2C%20Mexico&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer border-top py-4 text-center"><small>© 2026 Fabian · Portafolio personal</small></footer>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
